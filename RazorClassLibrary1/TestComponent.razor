@@ -1,0 +1,47 @@
+﻿<div class="wrapper">
+
+<h3 class="Title">Component Test</h3>
+
+<p class="P">Component comes with a story</p>
+
+    <p class="story">
+       @lelele
+       @aaa
+       @bbb
+       @ccc</p>
+
+<button class="btn" @onclick="clicked">
+    aaa
+</button>
+</div>
+@code {
+    string lelele = "";
+    string aaa = "";
+    string bbb = "";
+    string ccc = "";
+    bool abc = false;
+    private void clicked(){
+        while (true)
+        {
+            if (abc == false)
+            {
+                Console.WriteLine("here");
+                lelele = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui quam, posuere et varius quis, feugiat vitae ex. Donec et facilisis nulla. Vivamus ac sollicitudin eros. Donec ultrices molestie tortor sit amet placerat. Nulla a mi tortor. Nunc a lobortis dolor. Ut efficitur finibus tellus non bibendum. Maecenas tincidunt facilisis orci sed lobortis.";
+                aaa = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui quam, posuere et varius quis, feugiat vitae ex. Donec et facilisis nulla. Vivamus ac sollicitudin eros. Donec ultrices molestie tortor sit amet placerat. Nulla a mi tortor. Nunc a lobortis dolor. Ut efficitur finibus tellus non bibendum. Maecenas tincidunt facilisis orci sed lobortis.";
+                bbb = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui quam, posuere et varius quis, feugiat vitae ex. Donec et facilisis nulla. Vivamus ac sollicitudin eros. Donec ultrices molestie tortor sit amet placerat. Nulla a mi tortor. Nunc a lobortis dolor. Ut efficitur finibus tellus non bibendum. Maecenas tincidunt facilisis orci sed lobortis.";
+                ccc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui quam, posuere et varius quis, feugiat vitae ex. Donec et facilisis nulla. Vivamus ac sollicitudin eros. Donec ultrices molestie tortor sit amet placerat. Nulla a mi tortor. Nunc a lobortis dolor. Ut efficitur finibus tellus non bibendum. Maecenas tincidunt facilisis orci sed lobortis.";
+                abc = true;
+                break;
+            }
+            if (abc == true)
+            {
+                lelele = "";
+                aaa = "";
+                bbb = "";
+                ccc = "";
+                abc = false;
+                break;
+            }
+        }
+    }
+}
